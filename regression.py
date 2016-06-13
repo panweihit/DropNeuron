@@ -240,9 +240,9 @@ def display():
     return mse
 
 
-# optimizer = tf.train.GradientDescentOptimizer(float(sys.argv[3])).minimize(cost)
-# optimizer = tf.train.RMSPropOptimizer(float(sys.argv[3]), decay=0.9, momentum=0.0, epsilon=1e-10, use_locking=False).minimize(cost)
-# optimizer = tf.train.AdagradOptimizer(float(sys.argv[3]), initial_accumulator_value=0.1, use_locking=False).minimize(cost)
+# optimizer = tf.train.GradientDescentOptimizer(learning_rate_ini).minimize(cost)
+# optimizer = tf.train.RMSPropOptimizer(learning_rate_ini, decay=0.9, momentum=0.0, epsilon=1e-10, use_locking=False).minimize(cost)
+# optimizer = tf.train.AdagradOptimizer(learning_rate_ini, initial_accumulator_value=0.1, use_locking=False).minimize(cost)
 optimizer = tf.train.AdamOptimizer(learning_rate_ini, beta1=0.9, beta2=0.999, epsilon=1e-08, use_locking=False).minimize(cost)
 
 init = tf.initialize_all_variables()
