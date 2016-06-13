@@ -14,7 +14,7 @@ regularization techniques, e.g. Dropout, L1, L2.
 [DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/???.pdf)
 
 
-If you find Deep Compression useful in your research, please consider citing the paper:
+If you find DropNeuron useful in your research, please consider citing the paper:
 
 	@inproceedings{pan2016dropneuron,
 	  title={DropNeuron: Simplifying the Structure of Deep Neural Networks},
