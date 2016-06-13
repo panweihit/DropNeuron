@@ -10,7 +10,7 @@ compress or reduce a large trained model. DropNeuron can be mixed used with othe
 regularization techniques, e.g. Dropout, L1, L2.
 
 
-# Related Papers
+## Related Papers
 [DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/???.pdf)
 
 
@@ -25,9 +25,9 @@ If you find DropNeuron useful in your research, please consider citing the paper
 	
 
 
-# Usage:
+## Usage:
 
-## Installation
+### Installation
 
 **TensorFlow Installation**
 
@@ -60,7 +60,7 @@ from regularizers import *
 
 A typical model and cost function specification are as follows:
 
-## Model and Problem Formulation.
+### Model and Problem Formulation.
 
 ** And example on LeNet-300-100
 
@@ -107,7 +107,7 @@ cost += dropneuron(0.001)
 ```
 
 
-## Using High Level API 
+### Using High Level API 
 
 ** We use [TFLean](http://tflearn.org) to implement AlexNet. Similarly, you may check [Keras](http://keras.io/) as an alternative.  
 
@@ -149,7 +149,7 @@ loss += 0.001 * regularizers
 ```
  
    
-# Examples:
+## Examples:
 
 **[Sparse Regression](regression.py). 
 
