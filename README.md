@@ -151,32 +151,38 @@ loss += 0.001 * regularizers
 # Examples:
 
 [Sparse Regression](regression.py). 
+
 Implement sparse regression using a fully connected network with one hidden layer. 
 This example is synthetic and flowing the standard setup in Compressive Sensing and Sparse Signal Recovery papers 
 
 Interestingly, we apply DropNeuron to recover the exact solution with linear activation function! 
-Check papers of Emmanuel Candes, Terrance Tao and David Donoho on performance guarantee.
+Check papers of Emmanuel Candes, Terrence Tao and David Donoho on performance guarantee.
 
 [Autoencoder](autoencoder.py). 
+
 Implement autoencoder for feature extraction of MNIST dataset.
 
 [LeNet-300-100](lenet-300-100.py). 
+
 Implement LeNet for classification of MNIST dataset. 
 LeNet-300-100 is a fully connected network with two hidden layers, with 300 and 100 neurons each.
 
 [LeNet-5](lenet-5.py). 
+
 Implement LeNet for classification of MNIST dataset. 
 LeNet-5 is a convolutional network that has two convolutional layers and two fully connected layers
 
 [ConvNet](convnet.py). 
+
 This is a modification of the official TensorFlow tutorial 
 on ['convolutional.py'](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/models/image/mnist/convolutional.py
 ). Check the regularizers specification after model specification in the code.
 
 [AlexNet](alexnet.py). 
+
 This is a modification of the TFLearn example ['Alexnet.py'](https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py).
 There are more [examples](https://github.com/tflearn/tflearn/tree/master/examples) 
-implemented using TLearn by [Aymeric Damien](https://github.com/aymericdamien).
+implemented using TLearn by [Aymeric Damien](https://github.com/aymericdamien}).
 You can apply DropNeuron to more complicated examples. 
 
 
