@@ -25,9 +25,7 @@ If you find DropNeuron useful in your research, please consider citing the paper
 	
 
 
-
-## Overview
-
+# Usage:
 
 ## Installation
 
@@ -59,11 +57,12 @@ from regularizers import *
 ```
 
 
-# Usage:
 
 A typical model and cost function specification are as follows:
 
-## Model and Problem Formulation for LeNet-300-100.
+## Model and Problem Formulation.
+
+** And example on LeNet-300-100
 
 ```python
 
@@ -110,7 +109,7 @@ cost += dropneuron(0.001)
 
 ## Using High Level API 
 
-# We use [TFLean](http://tflearn.org) to implement AlexNet. Similarly, you may check [Keras](http://keras.io/) as an alternative.  
+** We use [TFLean](http://tflearn.org) to implement AlexNet. Similarly, you may check [Keras](http://keras.io/) as an alternative.  
 
 ```python
 
