@@ -37,17 +37,17 @@ The codes requires Tensorflow (version >= 0.7) to be installed:
 *[Tensorflow installation instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md)*.
 
 
-**Using New [Regularizers](regularizer.py)**
+**Using New [Regularizers](regularizers.py)**
 
-The key file is [regularizer.py](regularizer.py) which is implemented based on the official [TensorFlow](https://github.com/tensorflow/tensorflow/) implementation: 
-[regularizer.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py).
+The key file is [regularizers.py](regularizers.py) which is implemented based on the official [TensorFlow](https://github.com/tensorflow/tensorflow/) implementation: 
+[regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py).
 The difference is that two new regularizes are added: *lo_regularizer* and *li_regularizer* to 
 regularize the outgoing and incoming connections of neurons.
 see the [paper]((http://arxiv.org/pdf/???.pdf)) for more details.  
 
 
-One option is substitute the offical [regularizer.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py). 
-with the new [regularizer.py](regularizer.py). Typically, we use the following command in both Linux and Mac
+One option is substitute the offical [regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py). 
+with the new [regularizers.py](regularizers.py). Typically, we use the following command in both Linux and Mac
 
     pip show tensorflow
     cd /usr/local/lib/python2.7/site-packages/tensorflow/contrib/layers/python/layers
