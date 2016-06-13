@@ -153,10 +153,10 @@ loss += 0.001 * regularizers
 [Sparse Regression](regression.py). 
 
 Implement sparse regression using a fully connected network with one hidden layer. 
-This example is synthetic and flowing the standard setup in Compressive Sensing and Sparse Signal Recovery papers 
+This example is synthetic and following the standard setup in Compressive Sensing and Sparse Signal Recovery papers 
 
 Interestingly, we apply DropNeuron to recover the exact solution with linear activation function! 
-Check papers of Emmanuel Candes, Terrence Tao and David Donoho on performance guarantee.
+Check papers of Emmanuel Candes, Terrence Tao and David Donoho on compressive sensing and results on performance guarantee.
 
 [Autoencoder](autoencoder.py). 
 
