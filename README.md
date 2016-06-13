@@ -176,7 +176,7 @@ on ['convolutional.py'](https://github.com/tensorflow/tensorflow/blob/master/ten
 [AlexNet](alexnet.py). 
 This is a modification of the TFLearn example ['Alexnet.py'](https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py).
 There are more [examples](https://github.com/tflearn/tflearn/tree/master/examples) 
-implemented using TLearn by [Aymeric Damien]{https://github.com/aymericdamien}.
+implemented using TLearn by [Aymeric Damien](https://github.com/aymericdamien).
 You can apply DropNeuron to more complicated examples. 
 
 
