@@ -45,7 +45,7 @@ see the [paper]((http://arxiv.org/pdf/???.pdf)) for more details.
 
 
 One option is substitute the offical [regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py). 
-with the new [regularizers.py](regularizers.py). Typically, we use the following command in both Linux and Mac
+with the new [regularizers.py](regularizers.py). Typically, we use the following command on both Linux and Mac
 
     pip show tensorflow
     cd /usr/local/lib/python2.7/site-packages/tensorflow/contrib/layers/python/layers
@@ -58,11 +58,9 @@ from regularizers import *
 
 
 
-A typical model and cost function specification are as follows:
-
 ### Model and Problem Formulation:
 
-**An example on LeNet-300-100**
+A typical model and cost function specification are as follows. This is an example on LeNet-300-100
 
 ```python
 
@@ -109,7 +107,7 @@ cost += dropneuron(0.001)
 
 ### Using High Level API: 
 
-**We use [TFLean](http://tflearn.org) to implement AlexNet. Similarly, you may check [Keras](http://keras.io/) as an alternative.** 
+We use [TFLean](http://tflearn.org) to implement AlexNet. Similarly, you may check [Keras](http://keras.io/) as an alternative.
 
 ```python
 
@@ -183,7 +181,7 @@ on ['convolutional.py'](https://github.com/tensorflow/tensorflow/blob/master/ten
 
 This is a modification of the TFLearn example ['Alexnet.py'](https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py).
 There are more [examples](https://github.com/tflearn/tflearn/tree/master/examples) 
-implemented using TLearn by [Aymeric Damien](https://github.com/aymericdamien).
+implemented using TFLearn by [Aymeric Damien](https://github.com/aymericdamien).
 You can apply DropNeuron to more complicated examples. 
 
 
