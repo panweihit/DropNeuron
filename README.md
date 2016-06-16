@@ -10,7 +10,7 @@ compress or reduce a large trained model. DropNeuron can be mixed used with othe
 regularization techniques, e.g. Dropout, L1, L2.
 
 
-## Related Paper (Coming very soon on arXiv)
+## Related Paper (coming very soon on arXiv)
 [DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/???.pdf)
 
 
@@ -26,6 +26,21 @@ If you find DropNeuron useful in your research, please consider citing the paper
 
 
 ## Usage:
+
+You will use a command looking like this with FIVE input parameters. 
+
+Look at the instruction on top of the script of each example 
+
+    python autoencoder.py argv[1] argv[2] argv[3] argv[4] argv[5]
+
+|Input| parameter |
+| -| -|
+|argv[1]| L1 regularization parameter |
+|argv[2]| L2 regularization parameter |
+|argv[3]| Dropout keep probability |
+|argv[4]| DropNeuron parameter |
+|argv[5]| pruning threshold |
+
 
 ### Installation
 
@@ -56,6 +71,8 @@ The other option is import 'regularizer' in the header of the file
 from regularizers import *
 ```
 
+
+### Command
 
 
 ### Model and Problem Formulation:
