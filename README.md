@@ -63,7 +63,7 @@ You will use a command looking like this with FIVE input parameters.
 
 Look at the instructions and a sample of resultes on top of the script of each example 
 
-    python autoencoder.py argv[1] argv[2] argv[3] argv[4] argv[5]
+    python examplename.py argv[1] argv[2] argv[3] argv[4] argv[5]
 
 
 | Input| Description |
