@@ -18,16 +18,16 @@ References:
 
  Summary of statistics
 
-    $ max error of test error is 0.073609710100527082
-    $ normalised mean square error of test error is 4.1896245625304817e-08
-    $ sparsity of w_fc1= 1.0 %
-    $ sparsity of w_out= 20.0 %
-    $ Total Sparsity=  2 / 105  =  1.90476190476 %
-    $ Compression Rate =  52.5
-    $ Neuron percentage =  1 / 20 = 5.0 %
-    $ Neuron percentage =  1 / 5 = 20.0 %
+    $ maximum of test error is  1.81478427048
+    $ normalised mean square error of test error is  1.86056767381e-05
+    $ sparsity of w_fc1= 4.0 %
+    $ sparsity of w_out= 40.0 %
+    $ Total Sparsity=  6 / 105  =  5.71428571429 %
+    $ Compression Rate =  17.5
+    $ Neuron percentage =  2 / 20 = 10.0 %
+    $ Neuron percentage =  2 / 5 = 40.0 %
     $ Neuron percentage =  1 / 1 = 100.0 %
-    $ Total Neuron Percentage =  3 / 26 = 11.5384615385 %
+    $ Total Neuron Percentage =  5 / 26 = 19.2307692308 %
 
 
 2.you can run the following command using Dropout
@@ -36,7 +36,7 @@ References:
 
  Summary of statistics
 
-    $ max error of test error is 178.95963241877269
+    $ maximum of test error is 178.95963241877269
     $ normalised mean square error of test error is 0.57045985189673865
     $ sparsity of w_fc1= 58.0 %
     $ sparsity of w_out= 100.0 %
