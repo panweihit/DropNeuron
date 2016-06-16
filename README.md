@@ -45,7 +45,7 @@ see the [paper]((http://arxiv.org/pdf/???.pdf)) for more details.
 
 
 One option is substitute the offical [regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py). 
-with the new [regularizers.py](regularizers.py). Typically, we use the following command on both Linux and Mac
+with the new [regularizers.py](regularizers.py). Typically, we use the following command on both Linux and Mac (I'm using Ubuntu 14.04 and MAC OS 10.11.4)
 
     pip show tensorflow
     cd /usr/local/lib/python2.7/site-packages/tensorflow/contrib/layers/python/layers
