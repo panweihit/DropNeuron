@@ -345,11 +345,3 @@ with tf.Session() as sess:
              'threshold': threshold,
              'mse_noprune': mse_noprune,
              'mse_prune': mse_prune})
-
-
-
-
-
-
-
-
