@@ -51,7 +51,7 @@ with the new [regularizers.py](regularizers.py). Typically, we use the following
     cd /usr/local/lib/python2.7/site-packages/tensorflow/contrib/layers/python/layers
 
 
-The other option is import 'regularizer' in the header of the file
+The other option is import 'regularizers' in the header of the file
 ```python
 from regularizers import *
 ```
@@ -61,7 +61,7 @@ from regularizers import *
 
 You will use a command looking like this with FIVE input parameters. 
 
-Look at the instruction on top of the script of each example 
+Look at the instructions and a sample of resultes on top of the script of each example 
 
     python autoencoder.py argv[1] argv[2] argv[3] argv[4] argv[5]
 
