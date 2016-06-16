@@ -27,21 +27,6 @@ If you find DropNeuron useful in your research, please consider citing the paper
 
 ## Usage:
 
-You will use a command looking like this with FIVE input parameters. 
-
-Look at the instruction on top of the script of each example 
-
-    python autoencoder.py argv[1] argv[2] argv[3] argv[4] argv[5]
-
-|Input| parameter |
-| -| -|
-|argv[1]| L1 regularization parameter |
-|argv[2]| L2 regularization parameter |
-|argv[3]| Dropout keep probability |
-|argv[4]| DropNeuron parameter |
-|argv[5]| pruning threshold |
-
-
 ### Installation
 
 **TensorFlow Installation**
@@ -73,6 +58,22 @@ from regularizers import *
 
 
 ### Command
+
+You will use a command looking like this with FIVE input parameters. 
+
+Look at the instruction on top of the script of each example 
+
+    python autoencoder.py argv[1] argv[2] argv[3] argv[4] argv[5]
+
+
+| Input| Description |
+|-----|-----|
+| argv[1] | L1 regularization parameter |
+| argv[2] | L2 regularization parameter |
+| argv[3] | Dropout keep probability |
+| argv[4] | DropNeuron parameter |
+| argv[5] | pruning threshold |
+
 
 
 ### Model and Problem Formulation:
