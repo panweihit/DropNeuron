@@ -36,15 +36,15 @@ References:
 
  Summary of statistics
 
-    $ maximum of test error is 178.95963241877269
-    $ normalised mean square error of test error is 0.57045985189673865
+    $ maximum of test error is  132.45430406
+    $ normalised mean square error of test error is  0.539424416323
     $ sparsity of w_fc1= 58.0 %
     $ sparsity of w_out= 100.0 %
-    $ Total Sparsity=  63 / 105  =  60.0 %
-    $ Compression Rate =  1.66666666667
-    $ Neuron percentage =  20 / 20 = 100.0 %
-    $ Neuron percentage =  5 / 5 = 100.0 %
-    $ Neuron percentage =  1 / 1 = 100.0 %
+    $ total Sparsity=  63 / 105  =  60.0 %
+    $ compression Rate =  1.66666666667
+    $ neuron percentage =  20 / 20 = 100.0 %
+    $ neuron percentage =  5 / 5 = 100.0 %
+    $ neuron percentage =  1 / 1 = 100.0 %
     $ Total Neuron Percentage =  26 / 26 = 100.0 %
 
 
@@ -337,6 +337,7 @@ with tf.Session() as sess:
              'w_out_': w_out_,
              'w_fc1': w_fc1,
              'w_out': w_out,
+             'true_solution': w,
              'learning_rate': learning_rate_ini,
              'lambda_l1': lambda_l1,
              'lambda_l2': lambda_l2,

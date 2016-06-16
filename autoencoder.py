@@ -13,67 +13,71 @@ Links:
 
 1. you can run the following command using DropNeuron
 
-    $ python autoencoder.py 0.00001  0 0.0001 1  0.01
+    $ python autoencoder.py 0.00001  0 0.00001 1  0.005
+
 
    You may have the following Summary of statistics:
 
-    $ sparsity of w_encoder_h1= 11.3889110332 %
-    $ sparsity of w_encoder_h2= 32.2631835938 %
-    $ sparsity of w_decoder_h1= 41.11328125 %
-    $ sparsity of w_decoder_h2= 15.7754703444 %
-    $ Total Sparsity=  33271 / 217088  =  15.326042895 %
-    $ Compression Rate =  6.52484145352
-    $ Accuracy without prune: 0.987599999644
-    $ Accuracy with prune: 0.988200000487
-    $ Neuron percentage =  319 / 784 = 40.6887755102 %
-    $ Neuron percentage =  79 / 128 = 61.71875 %
-    $ Neuron percentage =  56 / 64 = 87.5 %
-    $ Neuron percentage =  91 / 128 = 71.09375 %
-    $ Neuron percentage =  358 / 784 = 45.6632653061 %
-    $ Total Neuron Percentage =  903 / 1888 = 47.8283898305 %
+    $ sparsity of w_encoder_h1= 16.0036670918 %
+    $ sparsity of w_encoder_h2= 44.4702148438 %
+    $ sparsity of w_decoder_h1= 54.1137695312 %
+    $ sparsity of w_decoder_h2= 18.141143176 %
+    $ Total Sparsity=  42341 / 217088  =  19.5040720814 %
+    $ Compression Rate =  5.12713445596
+    $ NMSE without prune: 0.0121042
+    $ NMSE with prune: 0.0121184
+    $ Neuron percentage =  420 / 784 = 53.5714285714 %
+    $ Neuron percentage =  127 / 128 = 99.21875 %
+    $ Neuron percentage =  61 / 64 = 95.3125 %
+    $ Neuron percentage =  121 / 128 = 94.53125 %
+    $ Neuron percentage =  629 / 784 = 80.2295918367 %
+    $ Total Neuron Percentage =  1358 / 1888 = 71.9279661017 %
 
 
 
 2. you can run the following command without Regularisation or DropOut
 
-    $ python autoencoder.py 0.00001  0 0  0.5  0.01
+    $ python autoencoder.py 0.00001  0 0  0.5  0.005
 
     You may have the following Summary of statistics:
 
-    $ sparsity of w_encoder_h1= 13.9807876276 %
-    $ sparsity of w_encoder_h2= 47.5830078125 %
-    $ sparsity of w_decoder_h1= 51.611328125 %
-    $ sparsity of w_decoder_h2= 16.4919483418 %
-    $ Total Sparsity=  38706 / 217088  =  17.829635908 %
-    $ Compression Rate =  5.60863948742
-    $ Accuracy without prune: 0.986500000581
-    $ Accuracy with prune: 0.986600001343
-    $ Neuron percentage =  430 / 784 = 54.8469387755 %
-    $ Neuron percentage =  128 / 128 = 100.0 %
+    $ sparsity of w_encoder_h1= 15.1845503827 %
+    $ sparsity of w_encoder_h2= 46.2890625 %
+    $ sparsity of w_decoder_h1= 52.5268554688 %
+    $ sparsity of w_decoder_h2= 17.5392617985 %
+    $ Total Sparsity=  40934 / 217088  =  18.8559478184 %
+    $ Compression Rate =  5.30336639468
+    $ NMSE without prune: 0.0115187
+    $ NMSE with prune: 0.0115109
+    $ Neuron percentage =  459 / 784 = 58.5459183673 %
+    $ Neuron percentage =  127 / 128 = 99.21875 %
     $ Neuron percentage =  62 / 64 = 96.875 %
-    $ Neuron percentage =  114 / 128 = 89.0625 %
+    $ Neuron percentage =  121 / 128 = 94.53125 %
     $ Neuron percentage =  784 / 784 = 100.0 %
-    $ Total Neuron Percentage =  1518 / 1888 = 80.4025423729 %
+    $ Total Neuron Percentage =  1553 / 1888 = 82.2563559322 %
 
 
-    $ python autoencoder.py 0  0  0  0.5  0.01
+
+
+    $ python autoencoder.py 0  0  0  0.5  0.005
 
     You may have the following Summary of statistics:
 
-    $ sparsity of w_encoder_h1= 99.1370376276 %
-    $ sparsity of w_encoder_h2= 98.7426757812 %
-    $ sparsity of w_decoder_h1= 99.2797851562 %
-    $ sparsity of w_decoder_h2= 99.221739477 %
-    $ Total Sparsity=  215279 / 217088  =  99.1666973762 %
-    $ Compression Rate =  1.00840304907
-    $ Accuracy without prune: 1.0
-    $ Accuracy with prune: 1.0
+    $ sparsity of w_encoder_h1= 99.5744977679 %
+    $ sparsity of w_encoder_h2= 99.3896484375 %
+    $ sparsity of w_decoder_h1= 99.4506835938 %
+    $ sparsity of w_decoder_h2= 99.6083785077 %
+    $ Total Sparsity=  216173 / 217088  =  99.5785119399 %
+    $ Compression Rate =  1.00423272102
+    $ NMSE without prune: 0.0311838
+    $ NMSE with prune: 0.0311848
     $ Neuron percentage =  784 / 784 = 100.0 %
     $ Neuron percentage =  128 / 128 = 100.0 %
     $ Neuron percentage =  64 / 64 = 100.0 %
     $ Neuron percentage =  128 / 128 = 100.0 %
     $ Neuron percentage =  784 / 784 = 100.0 %
     $ Total Neuron Percentage =  1888 / 1888 = 100.0 %
+
 
 
 Author: Wei Pan
@@ -226,11 +230,6 @@ cost += dropneuron(lambda_dropneuron)
 
 optimizer = tf.train.AdamOptimizer(learning_rate_ini, beta1=0.9, beta2=0.999, epsilon=1e-08, use_locking=False).minimize(cost)
 
-# Test model
-correct_prediction = tf.equal(tf.argmax(y_pred, 1), tf.argmax(y_true, 1))
-# Calculate accuracy
-error = tf.reduce_mean(tf.cast(correct_prediction, "float"))
-
 # Initializing the variables
 init = tf.initialize_all_variables()
 
@@ -252,7 +251,7 @@ with tf.Session() as sess:
             print "Epoch:", '%04d' % (epoch+1), "loss=", "{:.9f}".format(loss_value)
     print("Optimization Finished!")
 
-    accuracy_noprune = 1 - error.eval({input: mnist.test.images})
+    nmse_noprune = sess.run(loss, feed_dict={input: mnist.test.images})
 
     w_encoder_h1_, w_encoder_h1 = prune(W['encoder_h1'])
     W_prune['encoder_h1'] = W['encoder_h1'].assign(w_encoder_h1, use_locking=False)
@@ -292,10 +291,10 @@ with tf.Session() as sess:
         " = ", total_sparsity*100, "%"
     print "Compression Rate = ", float(num_parameter)/float(sparsity)
 
-    accuracy_prune = 1 - error.eval({input: mnist.test.images})
+    nmse_prune = sess.run(loss, feed_dict={input: mnist.test.images})
 
-    print "Accuracy without prune:", accuracy_noprune
-    print "Accuracy with prune:", accuracy_prune
+    print "NMSE without prune:", nmse_noprune
+    print "NMSE with prune:", nmse_prune
 
     # Applying encode and decode over test set
     encode_decode = sess.run(y_pred, feed_dict={input: mnist.test.images[:examples_to_show]})
@@ -321,7 +320,7 @@ with tf.Session() as sess:
         neuron_left_, "/", neuron_total_, "=", float(neuron_left_)/float(neuron_total_)*100, "%"
 
 
-    savemat('result/result_autoencoder_dropout.mat',
+    savemat('result/result_autoencoder_dropout_only.mat',
             {'w_encoder_h1_': w_encoder_h1_,
              'w_encoder_h2_': w_encoder_h2_,
              'w_decoder_h1_': w_decoder_h1_,
@@ -336,8 +335,8 @@ with tf.Session() as sess:
              'lambda_dropneuron': lambda_dropneuron,
              'keep_prob': keep_prob,
              'threshold': threshold,
-             'accuracy_prune': accuracy_prune,
-             'accuracy_noprune': accuracy_noprune})
+             'accuracy_prune': nmse_prune,
+             'accuracy_noprune': nmse_noprune})
 
     # Compare original images with their reconstructions
     f1, a1 = plt.subplots(1, 10, figsize=(10, 1))
@@ -346,14 +345,14 @@ with tf.Session() as sess:
         a1[i].imshow(np.reshape(mnist.test.images[i], (28, 28)))
         a1[i].axis('off')
     f1.show()
-    plt.savefig('ae0.pdf', format='pdf')
+    plt.savefig('m1.pdf', format='pdf')
     f2, a2 = plt.subplots(1, 10, figsize=(10, 1))
     for i in range(examples_to_show):
         # a2[i].imshow(np.reshape(encode_decode[i], (28, 28)), cmap='Greys_r')
         a2[i].imshow(np.reshape(encode_decode[i], (28, 28)))
         a2[i].axis('off')
     f2.show()
-    plt.savefig('ae1.pdf', format='pdf')
+    plt.savefig('m2.5.pdf', format='pdf')
     plt.draw()
     plt.waitforbuttonpress()
 
