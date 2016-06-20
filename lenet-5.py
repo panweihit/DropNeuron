@@ -136,7 +136,7 @@ W = {
     'out': tf.Variable(tf.truncated_normal([n_hidden_2, n_classes], stddev=0.01))
 }
 
-W_prune = W
+W_prune = W.copy
 
 biases = {
     'bc1': tf.Variable(tf.truncated_normal([32], stddev=0.01)),
@@ -217,7 +217,7 @@ def prune(x):
     y_noprune = sess.run(x)
     y_noprune = np.asarray(y_noprune)
     low_values_indices = abs(y_noprune) < threshold
-    y_prune = y_noprune
+    y_prune = np.copy(y_noprune)
     y_prune[low_values_indices] = 0
     return y_noprune, y_prune
 
@@ -290,7 +290,7 @@ with tf.Session() as sess:
     accuracy_noprune = accuracy.eval({x: mnist.test.images, y: mnist.test.labels})
 
     w_fc1_, w_fc1 = prune(W['wfc1'])
-    W_prune['fc1'] = W['wfc1'].assign(w_fc1, use_locking=False)
+    W_prune['wfc1'] = W['wfc1'].assign(w_fc1, use_locking=False)
     print "w_fc1 =", '\n',  w_fc1, "shape = ", np.shape(w_fc1), '\n'
     w_out_, w_out = prune(W['out'])
     W_prune['out'] = W['out'].assign(w_out, use_locking=False)
