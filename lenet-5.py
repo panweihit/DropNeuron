@@ -130,7 +130,7 @@ W = {
     'wc1': tf.Variable(tf.truncated_normal([5, 5, 1, 32], stddev=0.01)),
     # 5x5 conv, 32 inputs, 64 outputs
     'wc2': tf.Variable(tf.truncated_normal([5, 5, 32, 64], stddev=0.01)),
-    # fully connected, 7*7*64 inputs, 1024 outputs
+    # fully connected, 5*5*64 inputs, 1024 outputs
     'wfc1': tf.Variable(tf.truncated_normal([n_hidden_1, n_hidden_2], stddev=0.01)),
     # 1024 inputs, 10 outputs (class prediction)
     'out': tf.Variable(tf.truncated_normal([n_hidden_2, n_classes], stddev=0.01))
