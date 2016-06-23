@@ -18,7 +18,7 @@ If you find DropNeuron useful in your research, please consider citing the paper
 
 	@inproceedings{pan2016dropneuron,
 	  title={DropNeuron: Simplifying the Structure of Deep Neural Networks},
-	  author={Pan, Wei and Guo, Yike and Dong, Hao},
+	  author={Pan, Wei and Dong, Hao and Guo, Yike},
       journal={arXiv preprint arXiv:???},
       year={2016}
 	}
