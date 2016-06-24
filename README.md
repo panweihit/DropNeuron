@@ -1,6 +1,6 @@
 # DropNeuron: Simplifying the Structure of Deep Neural Networks
 
-This is a demo of [DropNeuron](https://www.dropbox.com/s/v4e6w94yqori3y1/submit.pdf?dl=0). 
+This is a demo of [DropNeuron](http://arxiv.org/pdf/1606.07326v1.pdf). 
 We perform various supervised and unsupervised learning tasks in Deep Learning. 
 During training, many neurons are dropped which yields a much smaller model size but 
 no accuracy lost.
@@ -11,7 +11,7 @@ regularization techniques, e.g. Dropout, L1, L2.
 
 
 ## Related Paper (coming very soon on arXiv)
-[DropNeuron: Simplifying the Structure of Deep Neural Networks](https://www.dropbox.com/s/v4e6w94yqori3y1/submit.pdf?dl=0)
+[DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/1606.07326v1.pdf)
 
 
 If you find DropNeuron useful in your research, please consider citing the paper:
@@ -19,7 +19,7 @@ If you find DropNeuron useful in your research, please consider citing the paper
 	@inproceedings{pan2016dropneuron,
 	  title={DropNeuron: Simplifying the Structure of Deep Neural Networks},
 	  author={Pan, Wei and Dong, Hao and Guo, Yike},
-      journal={arXiv preprint arXiv:???},
+      journal={arXiv preprint arXiv:1606.07326},
       year={2016}
 	}
 	
