@@ -10,7 +10,7 @@ compress or reduce a large trained model. DropNeuron can be mixed used with othe
 regularization techniques, e.g. Dropout, L1, L2.
 
 
-## Related Paper (coming very soon on arXiv)
+## Related Paper
 [DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/1606.07326v1.pdf)
 
 
