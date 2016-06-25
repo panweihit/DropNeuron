@@ -16,7 +16,45 @@ Links:
 
 ================================How to run this script=================================
 
-1.  Run the following command with DropNeuron
+1.  Run the following command with Dropout, with keep probability of 50%
+
+    $ python lenet-5.py 0 0 0 0.5 0.01
+
+    A Sample of Summary Statistics
+
+    $ sparsity of w_fc1= 55.1476303412 %
+    $ sparsity of w_out= 62.8125 %
+    $ Total Sparsity=  888684 / 1610752  =  55.171994199 %
+    $ Compression Rate =  1.81251378443
+    $ Accuracy without prune: 0.9907
+    $ Accuracy with prune: 0.9912
+    $ Neuron percentage =  3136 / 3136 = 100.0 %
+    $ Neuron percentage =  504 / 512 = 98.4375 %
+    $ Neuron percentage =  10 / 10 = 100.0 %
+    $ Total Neuron Percentage =  3650 / 3658 = 99.7813012575 %
+
+
+2. Add L1 regularisation
+
+    $ python lenet-5.py 0.0002 0 0 0.5 0.01
+
+    This should achieve a test error of around 1%
+    Better performance can be achieved under different weight initialisation
+
+    A Sample of Summary Statistics
+
+    $ sparsity of w_fc1= 5.42459293288 %
+    $ sparsity of w_out= 51.66015625 %
+    $ Total Sparsity=  89744 / 1610752  =  5.5715591227 %
+    $ Compression Rate =  17.9482973792
+    $ Accuracy without prune: 0.9901
+    $ Accuracy with prune: 0.9896
+    $ Neuron percentage =  1039 / 3136 = 33.131377551 %
+    $ Neuron percentage =  320 / 512 = 62.5 %
+    $ Neuron percentage =  10 / 10 = 100.0 %
+    $ Total Neuron Percentage =  1369 / 3658 = 37.4248223073 %
+    
+3.  Run the following command with DropNeuron
 
     Use DropNeuron only
 
@@ -38,45 +76,7 @@ Links:
     Use DropNeuron with Dropout
 
     This should achieve a test error of around 1%
-    Better performance can be achieved under different weight initialisation
-
-2.  Run the following command with Dropout, with keep probability of 50%
-
-    $ python lenet-5.py 0 0 0 0.5 0.01
-
-    A Sample of Summary Statistics
-
-    $ sparsity of w_fc1= 55.1476303412 %
-    $ sparsity of w_out= 62.8125 %
-    $ Total Sparsity=  888684 / 1610752  =  55.171994199 %
-    $ Compression Rate =  1.81251378443
-    $ Accuracy without prune: 0.9907
-    $ Accuracy with prune: 0.9912
-    $ Neuron percentage =  3136 / 3136 = 100.0 %
-    $ Neuron percentage =  504 / 512 = 98.4375 %
-    $ Neuron percentage =  10 / 10 = 100.0 %
-    $ Total Neuron Percentage =  3650 / 3658 = 99.7813012575 %
-
-
-Add L1 regularisation
-
-    $ python lenet-5.py 0.0002 0 0 0.5 0.01
-
-    This should achieve a test error of around 1%
-    Better performance can be achieved under different weight initialisation
-
-    A Sample of Summary Statistics
-
-    $ sparsity of w_fc1= 5.42459293288 %
-    $ sparsity of w_out= 51.66015625 %
-    $ Total Sparsity=  89744 / 1610752  =  5.5715591227 %
-    $ Compression Rate =  17.9482973792
-    $ Accuracy without prune: 0.9901
-    $ Accuracy with prune: 0.9896
-    $ Neuron percentage =  1039 / 3136 = 33.131377551 %
-    $ Neuron percentage =  320 / 512 = 62.5 %
-    $ Neuron percentage =  10 / 10 = 100.0 %
-    $ Total Neuron Percentage =  1369 / 3658 = 37.4248223073 %
+    Better performance can be achieved under different weight initialisation    
 
 Author: Wei Pan
 Contact: w.pan11@imperial.ac.uk
