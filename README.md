@@ -1,6 +1,6 @@
 # DropNeuron: Simplifying the Structure of Deep Neural Networks
 
-This is a demo of [DropNeuron](http://arxiv.org/pdf/1606.07326v1.pdf). 
+This is a demo of [DropNeuron](http://arxiv.org/abs/1606.07326). 
 We perform various supervised and unsupervised learning tasks in Deep Learning. 
 During training, many neurons are dropped which yields a much smaller model size but 
 no accuracy lost.
@@ -11,7 +11,7 @@ regularization techniques, e.g. Dropout, L1, L2.
 
 
 ## Related Paper
-[DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/pdf/1606.07326v1.pdf)
+[DropNeuron: Simplifying the Structure of Deep Neural Networks](http://arxiv.org/abs/1606.07326)
 
 
 If you find DropNeuron useful in your research, please consider citing the paper:
@@ -19,8 +19,8 @@ If you find DropNeuron useful in your research, please consider citing the paper
 	@inproceedings{pan2016dropneuron,
 	  title={DropNeuron: Simplifying the Structure of Deep Neural Networks},
 	  author={Pan, Wei and Dong, Hao and Guo, Yike},
-      journal={arXiv preprint arXiv:1606.07326},
-      year={2016}
+          journal={arXiv preprint arXiv:1606.07326},
+          year={2016}
 	}
 	
 
@@ -41,7 +41,7 @@ The key file is [regularizers.py](regularizers.py) which is implemented based on
 [regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py).
 The difference is that two new regularizes are added: *lo_regularizer* and *li_regularizer* to 
 regularize the outgoing and incoming connections of neurons.
-see the [paper]((http://arxiv.org/pdf/???.pdf)) for more details.  
+see the [paper]((http://arxiv.org/abs/1606.07326)) for more details.  
 
 
 One option is substitute the offical [regularizers.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/layers/python/layers/regularizers.py). 
@@ -57,7 +57,7 @@ from regularizers import *
 ```
 
 
-### Command
+### Run in terminal
 
 You will use a command looking like this with FIVE input parameters. 
 
