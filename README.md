@@ -59,9 +59,10 @@ from regularizers import *
 
 ### Run in terminal
 
-You will use a command looking like this with FIVE input parameters. 
+Look at the instructions and a sample of results on top of the script of each example.
 
-Look at the instructions and a sample of resultes on top of the script of each example 
+You will use a command looking like this with FIVE input parameters. You can use the parameter in the examples.
+
 
     python examplename.py argv[1] argv[2] argv[3] argv[4] argv[5]
 
