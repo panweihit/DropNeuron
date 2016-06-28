@@ -31,7 +31,7 @@ If you find DropNeuron useful in your research, please consider citing the paper
 
 **TensorFlow Installation**
 
-The codes requires Tensorflow (version >= 0.7) to be installed: 
+The codes requires Tensorflow (version = 0.9) to be installed: 
 *[Tensorflow installation instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md)*.
 
 
