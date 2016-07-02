@@ -61,7 +61,7 @@ from regularizers import *
 
 Look at the instructions and a sample of results on top of the script of each example.
 
-You will use a command looking like this with FIVE input parameters. You can use the parameter in the examples.
+You will use a command like this with FIVE input parameters. In the header of each script, you can check the parameters I use for the experiments in the paper.
 
 
     python examplename.py argv[1] argv[2] argv[3] argv[4] argv[5]
@@ -79,7 +79,7 @@ You will use a command looking like this with FIVE input parameters. You can use
 
 ### Model and Problem Formulation:
 
-A typical model and cost function specification are as follows. This is an example on LeNet-300-100
+A typical model and cost function specification are as follows. This is an example for [LeNet-300-100](lenet-300-100.py)
 
 ```python
 
